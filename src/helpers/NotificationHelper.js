@@ -2,8 +2,6 @@
 import { store } from 'react-notifications-component';
 import React from 'react'
 export const NotificacionDefault = (titulo,mensaje)=>{
-
-
     store.addNotification({
         title: titulo ,
         message: mensaje,
@@ -21,8 +19,6 @@ export const NotificacionDefault = (titulo,mensaje)=>{
 }
 
 export const NotificacionCustom = ()=>{
-
-
     store.addNotification({
         content:myNotification,
         type: "danger",
@@ -39,7 +35,6 @@ export const NotificacionCustom = ()=>{
 }
 
 const myNotification = ()=>{
-
     return(
        <h1>Mensaje</h1>
     )

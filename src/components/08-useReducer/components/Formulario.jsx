@@ -29,7 +29,7 @@ const Formulario = ({ setopen, dispatch }) => {
         Agregar Tareas
       </Typography>
       <form onSubmit={handleSubmit}>
-        <Box mt={4}>
+        <Box mt={4 }>
           <TextField
             fullWidth
             id="desc"

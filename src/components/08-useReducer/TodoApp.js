@@ -45,6 +45,8 @@ const TodoApp = () => {
   };
   return (
     <>
+   
+      <Container>
       <Snackbar
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         open={open}
@@ -55,7 +57,6 @@ const TodoApp = () => {
           Por favor rellena el formulario
         </Alert>
       </Snackbar>
-      <Container>
         <Box mb={6} mt={3} alignItems="center" justifyContent="center">
         <Typography align="center" variant="h3">Tareas {todos.length} Pendientes</Typography>
         </Box>
