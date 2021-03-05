@@ -16,9 +16,13 @@ import ReactDOM from 'react-dom';
 // import { Padre } from './components/07-tarea-memo/Padre';
 // import TodoApp from './components/08-useReducer/TodoApp';
 import MainApp from './components/09-useContext/MainApp'
+import {theme} from './config/ThemeConfig'
+import {ThemeProvider } from '@material-ui/core/styles';
 import 'react-notifications-component/dist/theme.css'
 ReactDOM.render(
-    <MainApp />,
+  <ThemeProvider theme={theme}>
+    <MainApp />
+    </ThemeProvider>,
   document.getElementById('root')
 );
 
